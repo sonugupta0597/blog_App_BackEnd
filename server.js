@@ -31,6 +31,11 @@ api.post("/", json_parser, (req, res) => {
     res.send("hello Kittu");
 });
 
+api.get("/", json_parser, (req, res) => {
+    console.log(req.body.a)
+    res.send("hello Kittu");
+});
+
 
 api.post('/getCount', json_parser, (req, res) => {
 
