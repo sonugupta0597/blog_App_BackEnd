@@ -3,6 +3,13 @@ const body_parser = require("body-parser");
 const axios = require('axios')
 const json_parser = body_parser.json();
 const mongoose = require('mongoose');
+const news = require("./news");
+const sports = require("./sports");
+const entertainment = require("./entertainment");
+const science = require("./science");
+const technology = require("./technology");
+const business = require("./business");
+const top_headlines = require("./topHeadings");
 const api = express();
 
 api.listen(process.env.PORT||5000);
