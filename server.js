@@ -5,7 +5,7 @@ const json_parser = body_parser.json();
 const mongoose = require('mongoose');
 const api = express();
 
-api.listen(3001);
+api.listen(process.env.PORT||5000);
 api.use(json_parser)
 
 mongoose.connect('mongodb://localhost:27017/blogPost', {
